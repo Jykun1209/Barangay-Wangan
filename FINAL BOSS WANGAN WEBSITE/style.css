@@ -1,0 +1,759 @@
+/* ==========================================
+   BARANGAY WANGAN OFFICIAL WEBSITE
+   style.css
+========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#00695c;
+    z-index:1000;
+}
+
+nav{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 0;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:55px;
+    height:55px;
+
+}
+
+.logo h2{
+
+    color:white;
+    font-size:24px;
+
+}
+
+.nav-links{
+
+    display:flex;
+    list-style:none;
+    gap:25px;
+
+}
+
+.nav-links a{
+
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#FFD54F;
+
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("Assets/BarangayWangan.jpg") center/cover no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero-content{
+
+    width:80%;
+
+}
+
+.hero-content h1{
+
+    font-size:clamp(3rem,7vw,5rem);
+    font-weight:800;
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:1.3rem;
+    margin-bottom:35px;
+
+}
+
+.btn{
+
+    display:inline-block;
+    padding:16px 38px;
+
+    background:#FFD54F;
+
+    color:#222;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    background:#ffca28;
+    transform:translateY(-3px);
+
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+    margin:80px auto;
+
+}
+
+.container h2{
+
+    text-align:center;
+    color:#00695c;
+    margin-bottom:40px;
+    font-size:36px;
+
+}
+
+.about-text{
+
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+
+}
+
+/* ==========================
+   PUNONG BARANGAY
+========================== */
+
+.captain-card{
+
+    max-width:900px;
+
+    margin:50px auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.captain-card img{
+
+    width:220px;
+    height:220px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+    border:6px solid #00695c;
+
+    margin-bottom:20px;
+
+}
+
+.captain-card h3{
+
+    color:#00695c;
+
+}
+
+.captain-card h1{
+
+    margin:10px 0;
+
+}
+
+.captain-card p{
+
+    margin-top:15px;
+
+    color:#555;
+
+}
+
+.social-links{
+
+    margin-top:20px;
+
+}
+
+.social-links a{
+
+    font-size:30px;
+
+    color:#1877F2;
+
+    text-decoration:none;
+
+}
+
+/* ==========================
+   OFFICIAL GRID
+========================== */
+
+.official-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+    margin-top:60px;
+
+}
+
+.official-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.official-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.official-card img{
+
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #00695c;
+
+    margin-bottom:15px;
+
+}
+
+.official-card h3{
+
+    color:#00695c;
+
+    margin-bottom:8px;
+
+}
+
+.official-card h4{
+
+    font-weight:500;
+    margin-bottom:15px;
+
+}
+
+.official-card a{
+
+    color:#1877F2;
+
+    text-decoration:none;
+
+    font-size:28px;
+
+}
+/* ==========================
+   FUNCTIONARIES
+========================== */
+
+.functionary-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+    margin-top:40px;
+
+}
+
+.functionary-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.functionary-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.functionary-card img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #00695c;
+
+    margin-bottom:15px;
+
+}
+
+.functionary-card h3{
+
+    color:#00695c;
+
+    margin-bottom:8px;
+
+}
+
+.functionary-card h4{
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.functionary-card p{
+
+    color:#666;
+
+    font-size:15px;
+
+    line-height:1.6;
+
+}
+
+/* ==========================
+   SK OFFICIALS
+========================== */
+
+.sk-chair-card{
+
+    max-width:900px;
+
+    margin:40px auto 70px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+.sk-chair-card img{
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #2e7d32;
+
+    margin-bottom:20px;
+
+}
+
+.sk-chair-card h3{
+
+    color:#2e7d32;
+
+    font-size:30px;
+
+}
+
+.sk-chair-card h1{
+
+    margin:10px 0;
+
+    font-size:38px;
+
+}
+
+.sk-chair-card p{
+
+    color:#555;
+
+    margin-top:15px;
+
+}
+
+/* SK GRID */
+
+.sk-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+}
+
+.sk-card{
+
+    background:white;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.sk-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.sk-card img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #2e7d32;
+
+    margin-bottom:15px;
+
+}
+
+.sk-card h3{
+
+    color:#2e7d32;
+
+    margin-bottom:10px;
+
+}
+
+.sk-card h4{
+
+    font-size:18px;
+
+    font-weight:500;
+
+}
+/* ==========================
+   SERVICES
+========================== */
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.service-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.service-card i{
+
+    font-size:45px;
+
+    color:#00695c;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+   ANNOUNCEMENTS
+========================== */
+
+.announcement{
+
+    background:white;
+
+    padding:30px;
+
+    border-left:6px solid #00695c;
+
+    margin-bottom:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+
+}
+
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+.map{
+
+    margin-top:30px;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    background:#004d40;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:60px;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+nav{
+
+    flex-direction:column;
+
+}
+
+.nav-links{
+
+    margin-top:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero-content h1{
+
+    font-size:3rem;
+
+}
+
+.container h2{
+
+    font-size:30px;
+
+}
+
+.captain-card{
+
+    padding:25px;
+
+}
+
+.captain-card img{
+
+    width:180px;
+    height:180px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-content p{
+
+    font-size:1rem;
+
+}
+
+.btn{
+
+    padding:14px 28px;
+
+}
+
+.logo h2{
+
+    font-size:20px;
+
+}
+
+.nav-links{
+
+    gap:15px;
+
+}
+
+}
